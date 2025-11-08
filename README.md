@@ -1,4 +1,4 @@
-# 🧠 Finetuning sentence transformer all-mpnet-base-v2 on Ray Technical Docs for RAG Pipelines
+#  Finetuning sentence transformer all-mpnet-base-v2 on Ray Technical Docs for RAG Pipelines
 
 Embedding models are the backbone of modern Retrieval Augmented Generation pipelines, supplying a language model with the most similar and relevant context from a knowledgebase to aide it's generation.
 
@@ -8,7 +8,7 @@ This project fine-tunes the [`all-mpnet-base-v2`](https://huggingface.co/sentenc
 
 ---
 
-## 📌 Objectives
+##  Objectives
 
 - Fine-tune an embedding model for domain-specific similarity retrieval.
 - Deploy trained model and dataset to Hugging Face for reuse.
@@ -16,7 +16,7 @@ This project fine-tunes the [`all-mpnet-base-v2`](https://huggingface.co/sentenc
 
 ---
 
-## 🗃️ Dataset
+##  Dataset
 
 I programmatically crawled and processed technical documentation from Ray.io using Python. My pipeline included:
 
@@ -73,13 +73,13 @@ Columns:
 This dataset provides a clean, high-quality resource for building domain-aware RAG pipelines on Ray’s technical domain.
 
 
-📁 Available on Hugging Face Datasets:
+Available on Hugging Face Datasets:
 
-➡️ [`thanhpham1/ray-technical-docs-qa-chunks`](https://huggingface.co/datasets/thanhpham1/ray-technical-docs-qa-chunks)
+ [`thanhpham1/ray-technical-docs-qa-chunks`](https://huggingface.co/datasets/thanhpham1/ray-technical-docs-qa-chunks)
 
 ---
 
-## 🔍 Model
+##  Model
 
 We fine-tuned the all-mpnet-base-v2 sentence embedding model on synthetic question–chunk pairs extracted from Ray documentation.
 
@@ -89,13 +89,13 @@ We evaluated the model on various embedding dimensions (768, 512, 256, 128, 64) 
 
 The fine-tuned model was published to Hugging Face Hub for downstream RAG tasks.
 
-📦 Available on Hugging Face Models:
+ Available on Hugging Face Models:
 
-➡️ [`thanhpham1/Finetuned-all-mpnet-base-v2-with-technical-docs`](https://huggingface.co/thanhpham1/Finetuned-all-mpnet-base-v2-with-technical-docs)
+ [`thanhpham1/Finetuned-all-mpnet-base-v2-with-technical-docs`](https://huggingface.co/thanhpham1/Finetuned-all-mpnet-base-v2-with-technical-docs)
 
 ---
 
-## 📊 Evaluation
+##  Evaluation
 
 We evaluated the fine-tuned model on a synthetic question-answer dataset derived from Ray documentation.  
 Evaluation was performed using **Information Retrieval** metrics across multiple embedding dimensions (768, 512, 256, 128, 64), leveraging **Matryoshka Representation Learning**.
@@ -181,12 +181,12 @@ similarities = model.similarity(embeddings, embeddings)
 print(similarities[0])
 ```
 
-## ✅ Similarity Comparison
+##  Similarity Comparison
 
 Below is an example comparing cosine similarities between a query and two passages from above, computed with the fine-tuned model vs. the original base model.
 
 
-### 🔥 Fine-Tuned Model Similarities
+###  Fine-Tuned Model Similarities
 
 | Pair                              | Cosine Similarity |
 |-----------------------------------|-------------------|
@@ -198,7 +198,7 @@ The fine-tuned model produces a much higher similarity for the relevant pair and
 
 ---
 
-### 🧪 Base Model (Before Fine-Tuning) Similarities
+###  Base Model (Before Fine-Tuning) Similarities
 
 | Pair                              | Cosine Similarity |
 |-----------------------------------|-------------------|
@@ -210,7 +210,7 @@ The base model shows poorer separation, with a higher similarity to the irreleva
 
 ---
 
-### 🚀 Summary
+###  Summary
 
 - The fine-tuned model **increased the relevant similarity margin** from `0.3352 → 0.5034`.
 - It **lowered the unrelated pair similarity** from `0.4369 → 0.1761`.
