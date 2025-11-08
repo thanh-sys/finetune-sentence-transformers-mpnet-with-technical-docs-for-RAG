@@ -130,7 +130,7 @@ The fine-tuned model demonstrated significant improvements, especially at lower 
 
 ---
 
-## 🧪 How to Use
+##  How to Use
 
 ### Install dependencies:
 
@@ -140,7 +140,7 @@ The fine-tuned model demonstrated significant improvements, especially at lower 
 !pip install git+https://github.com/huggingface/transformers
 from sentence_transformers import SentenceTransformer
 
-# Download from the 🤗 Hub
+# Download from the  Hub
 
 model = SentenceTransformer("thanhpham1/Fine-tune-all-mpnet-base-v2", truncate_dim=256)
 # Run inference
