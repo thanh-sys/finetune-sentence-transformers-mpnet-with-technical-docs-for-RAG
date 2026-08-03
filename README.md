@@ -1,3 +1,5 @@
+Open in colab
+
 #  Finetuning sentence transformer all-mpnet-base-v2 on Ray Technical Docs for RAG Pipelines
 
 Embedding models are the backbone of modern Retrieval Augmented Generation pipelines, supplying a language model with the most similar and relevant context from a knowledgebase to aide it's generation.
@@ -5,6 +7,7 @@ Embedding models are the backbone of modern Retrieval Augmented Generation pipel
 More often than not, we default to standard and generalized embedding models to convert our data into dense vector representations, which are then stored in a vector database and retrieved at runtime. And while these models are quite powerful to start, they suffer in performance when applied to domain specific or niche content- often failing to retrieve the most relevant or useful documents from an end user perspective. This error compounds as it is passed to a language model, which will confidently answer with erroneous data.
 
 This project fine-tunes the [`all-mpnet-base-v2`](https://huggingface.co/sentence-transformers/all-mpnet-base-v2) model from the [Sentence-Transformers](https://www.sbert.net/) library on domain-specific technical documentation (Ray.io docs). The goal is to enhance semantic retrieval quality in Retrieval-Augmented Generation (RAG) systems.
+
 
 ---
 
