@@ -2,7 +2,7 @@ Open in colab
 
 Fine_tune_Embedding_Model_on_Domain_Specific_Data.ipynb: https://colab.research.google.com/drive/1rbpc0-czGqlFo0HhGQp7Eyl_EEvkVAha?usp=sharing
 
-Gen_Question_and_Filtered_data.ipynb: https://colab.research.google.com/drive/1xVLUoajhD5VvhFETiUidm9mSqfghVFgW?usp=drive_link
+Gen_Question_and_Filtered_data.ipynb: https://colab.research.google.com/drive/1493SCUC0Yvqf97wjJZSLZ_eCDnXfgf8B?usp=sharing
 
 #  Finetuning sentence transformer all-mpnet-base-v2 on Ray Technical Docs for RAG Pipelines
 
